@@ -1,7 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 one:
-content: MyText
-user: mohammed
+content: "hi"
+user: faheema
 two:
-content: MyText
-user: mohammed
+content: "ho"
+user: faheema
+three:
+content: "hiya"
+user: mysuuu

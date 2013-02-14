@@ -30,7 +30,7 @@ assert_redirected_to new_user_session_path
 end
 
   test "should create status when logged in" do
-    sign_in users(:jason)
+    sign_in users(:faheema)
     assert_difference('Status.count') do
       post :create, status: { content: @status.content }
     end

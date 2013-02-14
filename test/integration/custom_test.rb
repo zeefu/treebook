@@ -13,4 +13,8 @@ test "that /register route opens the login page" do
 get '/register'
 assert_response :success
 end
+test "that a profile page works" do
+get '/fammy'
+assert_response :success
+end
 end

@@ -17,12 +17,12 @@ assert !user.errors[:profile_name].empty?
 end
 test "a user should have a unique profile name" do
 user = User.new
-user.profile_name = users(:mohammed).profile_name
+user.profile_name = users(:faheema).profile_name
 assert !user.save
 assert !user.errors[:profile_name].empty?
 end
 test "a user should have a profile name without spaces" do
-user = User.new(first_name: 'Mohammed', last_name: 'Huzaifa', email: 'zeefu21@gmail.com')
+user = User.new(first_name: 'faheema', last_name: 'rasheed', email: 'faheema@gmail.com')
 user.password = user.password_confirmation = 'asdfdsa'
 user.profile_name = "My Profile with spaces"
 assert !user.save
@@ -30,7 +30,7 @@ assert !user.errors[:profile_name].empty?
 assert user.errors[:profile_name].include?("Must be formatted correctly")
 end
 test "a user can have a correctly formatted profile" do
-user = User.new(first_name: 'Mohammed', last_name: 'Huzaifa', email: 'zeefu21@gmail.com')
+user = User.new(first_name: 'faheema', last_name: 'rasheed', email: 'faheema@gmail.com')
 user.password = user.password_confirmation = 'asdfdsa'
 user.profile_name = "huzaifa_1"
 assert user.valid?
