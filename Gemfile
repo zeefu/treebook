@@ -5,6 +5,10 @@ gem 'rails', '3.2.1'
 gem 'devise'
 gem 'simple_form'
 
+group :test do
+	gem 'shoulda'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
